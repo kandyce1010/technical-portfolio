@@ -82,41 +82,11 @@
                     
                     <div class="contact-form">
                         <h2>Send a Message</h2>
-                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" id="name" name="name" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a topic...</option>
-                                    <option value="job-opportunity">Job Opportunity</option>
-                                    <option value="freelance">Freelance Project</option>
-                                    <option value="collaboration">Collaboration</option>
-                                    <option value="technical-question">Technical Question</option>
-                                    <option value="networking">Networking</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="Tell me about your project, opportunity, or how we might work together..."></textarea>
-                            </div>
-                            
-                            <!-- Formspree honeypot field for spam protection -->
-                            <input type="text" name="_gotcha" style="display:none" />
-                            
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                        <p class="form-note">I typically respond within 24-48 hours. Looking forward to hearing from you!</p>
+                        <div class="contact-cta">
+                            <p>Ready to discuss your project or opportunity? I'd love to hear from you!</p>
+                            <a href="mailto:priyankamandke26@gmail.com?subject=Portfolio Contact&body=Hi Priyanka,%0D%0A%0D%0AI'd like to discuss..." class="btn btn-primary contact-btn">Send Email</a>
+                            <p class="contact-note">This will open your default email client with my address pre-filled.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -239,33 +209,41 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
 
-        .form-group {
-            margin-bottom: 1.5rem;
+        .contact-cta {
+            text-align: center;
+            padding: 2rem 0;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #1e293b;
-            font-weight: 600;
+        .contact-cta p {
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 2px solid #e2e8f0;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: border-color 0.3s;
+        .contact-btn {
+            background: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%) !important;
+            color: white !important;
+            border: none !important;
+            padding: 16px 40px !important;
+            border-radius: 12px !important;
+            font-weight: 600 !important;
+            font-size: 1.1rem !important;
+            text-decoration: none !important;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin-bottom: 1rem;
         }
 
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: #c026d3;
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+        }
+
+        .contact-note {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            font-style: italic;
         }
 
         .form-note {
