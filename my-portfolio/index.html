@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyanka Mandke - Technical Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Priyanka Mandke</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Priyanka Mandke</span></h1>
+                <p class="hero-subtitle">Application Developer | AWS Cloud Engineer</p>
+                <p class="hero-description">I build scalable cloud-native applications using AWS, Node.js, and TypeScript. Passionate about creating robust microservices architectures and serverless solutions that solve real-world business problems.</p>
+                <div class="hero-buttons">
+                    <a href="projects.html" class="btn btn-primary">View My Work</a>
+                    <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Toyota Vehicle Configuration Gateway</h3>
+                        <p>Developed 50+ microservices for global vehicle configuration and validation using serverless architecture.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS Lambda</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">DynamoDB</span>
+                        </div>
+                        <a href="projects.html" class="project-link">View Project →</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Delta Airlines Cloud Modernization</h3>
+                        <p>Modernized legacy airline systems by migrating to AWS serverless architecture with secure APIs.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS SAM</span>
+                            <span class="tech-tag">API Gateway</span>
+                            <span class="tech-tag">CI/CD</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                        <a href="projects.html" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Back to top functionality
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Back to top">
+        ↑
+    </button>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Priyanka Mandke. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Priyanka Mandke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Priyanka Mandke</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="margin-top: 70px;">
+        <section class="about-hero">
+            <div class="container">
+                <h1>About Me</h1>
+                <p class="about-subtitle">Application Developer focused on AWS cloud solutions and microservices architecture</p>
+            </div>
+        </section>
+
+        <section class="about-content">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h2>My Story</h2>
+                        <p>I'm an Application Developer with expertise in building scalable cloud-native applications using AWS services. My journey in technology has been focused on creating robust microservices architectures and serverless solutions that solve complex business challenges.</p>
+                        
+                        <p>Currently, I specialize in AWS cloud development, Node.js, and TypeScript, with extensive experience in building enterprise-grade applications for major companies like Toyota, Delta Airlines, and Aditya Birla Sun Life Insurance. I'm passionate about creating efficient, scalable solutions that drive business value.</p>
+
+                        <h3>What I Do</h3>
+                        <ul class="skills-list">
+                            <li>Serverless architecture with AWS Lambda</li>
+                            <li>Microservices development and deployment</li>
+                            <li>API design with API Gateway and REST</li>
+                            <li>Container orchestration with EKS and Kubernetes</li>
+                            <li>CI/CD pipeline implementation</li>
+                        </ul>
+
+                        <h3>Work History</h3>
+                        <div class="work-history">
+                            <div class="work-item">
+                                <h4>Senior API Developer</h4>
+                                <p class="work-company">Experis IT - Aditya Birla Sun Life Insurance</p>
+                                <p class="work-dates">Sep 2025 - Present</p>
+                                <p class="work-description">Building and scaling Node.js microservices on AWS EKS for high-volume insurance workflows. Managing container deployments and monitoring using CloudWatch and Prometheus.</p>
+                            </div>
+                            <div class="work-item">
+                                <h4>Application Developer</h4>
+                                <p class="work-company">IBM</p>
+                                <p class="work-dates">Jan 2021 - Jul 2025</p>
+                                <p class="work-description">Delivered 50+ production REST APIs using Node.js and AWS Lambda serving 100K+ daily users. Built event-driven pipelines processing 1M+ events monthly. Recognized with IBM Growth Award (2023).</p>
+                            </div>
+                        </div>
+
+                        <h3>Recent Highlights</h3>
+                        <ul class="values-list">
+                            <li><strong>AWS re:Invent 2025:</strong> Attended premier AWS conference in Las Vegas (Dec 2025)</li>
+                            <li><strong>IBM Growth Award:</strong> Recognized for improving backend performance and system stability (2023)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="about-sidebar">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300x300" alt="Priyanka Mandke" />
+                        </div>
+                        
+                        <div class="tech-stack">
+                            <h3>Technologies I Use</h3>
+                            <div class="tech-grid">
+                                <span class="tech-item">AWS</span>
+                                <span class="tech-item">Node.js</span>
+                                <span class="tech-item">TypeScript</span>
+                                <span class="tech-item">Lambda</span>
+                                <span class="tech-item">DynamoDB</span>
+                                <span class="tech-item">API Gateway</span>
+                                <span class="tech-item">EKS</span>
+                                <span class="tech-item">Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Priyanka Mandke. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .about-content {
+            padding: 80px 0;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+            color: #1e293b;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .skills-list li {
+            padding: 0.5rem 0;
+            color: #64748b;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .skills-list li:before {
+            content: "→";
+            color: #2563eb;
+            position: absolute;
+            left: 0;
+        }
+
+        .work-history {
+            margin-top: 1rem;
+        }
+
+        .work-item {
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .work-item:last-child {
+            border-bottom: none;
+        }
+
+        .work-item h4 {
+            font-size: 1.2rem;
+            color: #1e293b;
+            margin-bottom: 0.25rem;
+        }
+
+        .work-company {
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .work-dates {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .work-description {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .profile-image {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .profile-image img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .tech-stack h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.5rem;
+        }
+
+        .tech-item {
+            background: #e2e8f0;
+            color: #475569;
+            padding: 0.5rem;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .about-hero h1 {
+                font-size: 2rem;
+            }
+        }
+
+        /* Auto-advance indicator */
+        .auto-advance-indicator {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: rgba(37, 99, 235, 0.95);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1001;
+            backdrop-filter: blur(10px);
+        }
+
+        .auto-advance-indicator.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .indicator-content {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .progress-bar {
+            width: 60px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: white;
+            width: 0;
+            animation: fillProgress 3s linear;
+        }
+
+        @keyframes fillProgress {
+            to { width: 100%; }
+        }
+    </style>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Back to top functionality
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Auto-advance to next page when user reaches bottom
+        let autoAdvanceTimer;
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+            
+            // Check if user is near bottom (within 100px)
+            if (scrollTop + windowHeight >= docHeight - 100) {
+                // Clear any existing timer
+                clearTimeout(autoAdvanceTimer);
+                
+                // Show next page indicator
+                showNextPageIndicator();
+                
+                // Auto-advance after 3 seconds at bottom
+                autoAdvanceTimer = setTimeout(() => {
+                    window.location.href = 'projects.html';
+                }, 3000);
+            } else {
+                // Hide indicator and clear timer if user scrolls up
+                hideNextPageIndicator();
+                clearTimeout(autoAdvanceTimer);
+            }
+        });
+
+        function showNextPageIndicator() {
+            let indicator = document.querySelector('.auto-advance-indicator');
+            if (!indicator) {
+                indicator = document.createElement('div');
+                indicator.className = 'auto-advance-indicator';
+                indicator.innerHTML = `
+                    <div class="indicator-content">
+                        <span>Next: Projects</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                `;
+                document.body.appendChild(indicator);
+            }
+            indicator.classList.add('show');
+        }
+
+        function hideNextPageIndicator() {
+            const indicator = document.querySelector('.auto-advance-indicator');
+            if (indicator) {
+                indicator.classList.remove('show');
+            }
+        }
+    </script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Back to top">
+        ↑
+    </button>
+</body>
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Priyanka Mandke</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">Priyanka Mandke</div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="margin-top: 70px;">
+        <section class="projects-hero">
+            <div class="container">
+                <h1>My Projects</h1>
+                <p class="projects-subtitle">Enterprise-scale cloud solutions and microservices architectures</p>
+            </div>
+        </section>
+
+        <section class="projects-content">
+            <div class="container">
+                <div class="projects-grid">
+                    <div class="project-card-detailed">
+                        <div class="project-info">
+                            <h3>Toyota Vehicle Configuration Gateway (VCG)</h3>
+                            <p class="project-description">Developed and maintained 50+ microservices for vehicle configuration and validation across global markets using serverless architecture.</p>
+                            
+                            <div class="project-details">
+                                <h4>Problem Solved</h4>
+                                <p>Built backend services enabling real-time generation and validation of vehicle configurations based on models, specs, colors, and regional rules across global markets.</p>
+                                
+                                <h4>Technical Approach</h4>
+                                <p>Implemented serverless and container-based architecture supporting both synchronous (REST APIs) and asynchronous (event-driven) workloads. Decoupled services with EventBridge and SQS.</p>
+                                
+                                <h4>Key Impact</h4>
+                                <p>Improved system accuracy, reduced manual validation effort, and cut system failures by 30% while improving reliability through dynamic rule-based workflows.</p>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">Serverless Framework</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">DynamoDB</span>
+                                <span class="tech-tag">Lambda</span>
+                                <span class="tech-tag">EventBridge</span>
+                                <span class="tech-tag">SQS</span>
+                                <span class="tech-tag">API Gateway</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-detailed">
+                        <div class="project-info">
+                            <h3>Delta Airlines Cloud Modernization</h3>
+                            <p class="project-description">Modernized airline backend systems by migrating legacy workloads to AWS serverless architecture using SAM framework.</p>
+                            
+                            <div class="project-details">
+                                <h4>Problem Solved</h4>
+                                <p>Translated business requirements into cloud-native solutions ensuring scalability, security, and performance while meeting enterprise compliance standards.</p>
+                                
+                                <h4>Technical Approach</h4>
+                                <p>Developed secure APIs with authentication, monitoring, and error handling. Established CI/CD pipelines with AWS CodePipeline for automated deployment.</p>
+                                
+                                <h4>Key Impact</h4>
+                                <p>Reduced deployment errors, accelerated delivery speed, and successfully collaborated with cross-functional teams to align modernization goals with business outcomes.</p>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS SAM</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">API Gateway</span>
+                                <span class="tech-tag">CI/CD Pipeline</span>
+                                <span class="tech-tag">CodePipeline</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card-detailed">
+                        <div class="project-info">
+                            <h3>Aditya Birla Sun Life Insurance - Policy Services Platform</h3>
+                            <p class="project-description">Built and scaled Kubernetes-based microservices on AWS EKS for high-volume insurance APIs with enhanced observability.</p>
+                            
+                            <div class="project-details">
+                                <h4>Problem Solved</h4>
+                                <p>Created scalable microservices platform to handle high-volume insurance policy operations with improved fault tolerance and response times.</p>
+                                
+                                <h4>Technical Approach</h4>
+                                <p>Optimized Node.js services for performance, implemented secure integrations, autoscaling, and comprehensive CI/CD for reliable production delivery.</p>
+                                
+                                <h4>Key Impact</h4>
+                                <p>Improved observability with CloudWatch metrics, logging, and tracing. Enhanced system reliability and performance for critical insurance operations.</p>
+                            </div>
+                            
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS EKS</span>
+                                <span class="tech-tag">Kubernetes</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Microservices</span>
+                                <span class="tech-tag">CloudWatch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Priyanka Mandke. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        .projects-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .projects-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .projects-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .projects-content {
+            padding: 80px 0;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: 3rem;
+        }
+
+        .project-card-detailed {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .project-info {
+            padding: 2rem;
+        }
+
+        .project-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #1e293b;
+        }
+
+        .project-description {
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .project-details h4 {
+            color: #1e293b;
+            margin: 1.5rem 0 0.5rem;
+            font-size: 1rem;
+        }
+
+        .project-details p {
+            color: #64748b;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .project-tech {
+            display: flex;
+            gap: 0.5rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links .btn {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .projects-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .project-links {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+    <script>
+        function toggleMobileMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            const toggle = document.querySelector('.mobile-menu-toggle');
+            navMenu.classList.toggle('active');
+            toggle.classList.toggle('active');
+        }
+
+        // Back to top functionality
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Auto-advance to next page when user reaches bottom
+        let autoAdvanceTimer;
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+            
+            if (scrollTop + windowHeight >= docHeight - 100) {
+                clearTimeout(autoAdvanceTimer);
+                showNextPageIndicator();
+                autoAdvanceTimer = setTimeout(() => {
+                    window.location.href = 'certifications.html';
+                }, 3000);
+            } else {
+                hideNextPageIndicator();
+                clearTimeout(autoAdvanceTimer);
+            }
+        });
+
+        function showNextPageIndicator() {
+            let indicator = document.querySelector('.auto-advance-indicator');
+            if (!indicator) {
+                indicator = document.createElement('div');
+                indicator.className = 'auto-advance-indicator';
+                indicator.innerHTML = `
+                    <div class="indicator-content">
+                        <span>Next: Certifications</span>
+                        <div class="progress-bar"><div class="progress-fill"></div></div>
+                    </div>
+                `;
+                document.body.appendChild(indicator);
+            }
+            indicator.classList.add('show');
+        }
+
+        function hideNextPageIndicator() {
+            const indicator = document.querySelector('.auto-advance-indicator');
+            if (indicator) {
+                indicator.classList.remove('show');
+            }
+        }
+    </script>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" onclick="scrollToTop()" title="Back to top">
+        ↑
+    </button>
+</body>
+</html>
