@@ -4,7 +4,8 @@
 This guide is for **Phase 2** of the workshop (minutes 50-75), after participants have built their core 3-page portfolio manually. Use these prompts to enhance your content with AI coding assistants.
 
 **Compatible with:**
-- Amazon Q Developer (recommended)
+- Amazon Q Developer
+- Claude Code (recommended)
 - GitHub Copilot
 - Cursor
 - Other AI coding assistants
@@ -198,6 +199,13 @@ Keep it concise (4-5 sentences total).
 ---
 
 ## Using Different AI Tools
+
+### Claude Code
+- Install: `npm install -g @anthropic-ai/claude-code`, then run `claude` in your portfolio directory
+- Use the `/enhance-content` skill for guided content improvement prompts
+- Ask Claude directly in chat for any one-off improvements
+- References your actual files — give it the page name and ask for specific changes
+- Great for: rewriting project descriptions, improving your About narrative, generating blog ideas
 
 ### Amazon Q Developer
 - Use inline suggestions as you type
