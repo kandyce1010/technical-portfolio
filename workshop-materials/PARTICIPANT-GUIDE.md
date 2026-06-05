@@ -376,6 +376,56 @@ Links → GitHub/demo URLs
 - Add testimonials
 - Optimize for SEO
 
+### Set Up Claude Code for Ongoing Updates
+
+Your portfolio is a living document — new job, new project, new talk? Claude Code makes updating it fast. Here's how to set it up once and use it forever.
+
+#### Step 1: Install Claude Code
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+Requires Node.js 18+. Verify with `node --version`.
+
+#### Step 2: Add a CLAUDE.md to your portfolio repo
+
+Copy the template from this workshop repo into your own portfolio repo:
+
+```bash
+cp /path/to/technical-portfolio/templates/CLAUDE.md ~/YOURUSERNAME.github.io/
+```
+
+Then open it and fill in your name, color palette, and any notes about your specific setup.
+
+#### Step 3: Add the portfolio skills
+
+Copy the skills directory into your portfolio repo:
+
+```bash
+cp -r /path/to/technical-portfolio/templates/.claude ~/YOURUSERNAME.github.io/
+```
+
+#### Step 4: Open Claude Code in your portfolio
+
+```bash
+cd ~/YOURUSERNAME.github.io
+claude
+```
+
+#### Step 5: Try a skill
+
+Type any of these to get started:
+
+| Skill | What it does |
+|-------|-------------|
+| `/portfolio-audit` | Scans every page for stale content, broken links, and inconsistencies — no changes made, just a report |
+| `/add-project` | Asks for your project details and adds the HTML card to your projects page |
+| `/update-role` | Updates your job title, company, and role description across all pages at once |
+| `/add-video` | Adds a new video or livestream appearance to your video page |
+| `/new-blog-post` | Scaffolds a new blog post entry |
+
+**Start with `/portfolio-audit`** — it's read-only and shows you exactly what needs updating before you change anything.
+
 ### Deployment (Optional)
 
 **To publish your portfolio to GitHub Pages:**
