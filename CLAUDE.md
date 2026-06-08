@@ -1,7 +1,7 @@
 # Technical Portfolio Workshop
 
 This repo contains workshop materials for building a personal portfolio site with AI assistance.
-It was delivered as a 90-minute workshop at AWS re:Invent 2024.
+It was delivered as a 90-minute workshop at AWS re:Invent 2025.
 
 ## What this repo is
 
